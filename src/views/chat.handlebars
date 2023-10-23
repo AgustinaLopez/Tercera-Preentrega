@@ -1,0 +1,19 @@
+<div>
+    <h1>Chatea con nosotros</h1>
+    <h2>Tu nombre: <span id="myName"></span></h2>
+
+
+    {{!-- Inputs del mensaje de los usuarios --}}
+    <div>
+        <p>Escribe tu mensaje: <input id="chatBox" type="text"></p>
+        <button id="closeChatBox">Close ChatBox</button>
+    </div>
+
+    {{!-- Cuadro de renderizado de los mensajes --}}
+    <div>
+        <p id="messageLogs"></p>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/messages.js"></script>
